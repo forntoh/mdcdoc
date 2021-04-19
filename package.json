@@ -1,8 +1,9 @@
 {
     "name": "mdcdoc",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "CPP Header file to Markdown converter",
     "main": "mdcdoc.js",
+    "bin": "mdcdoc.js",
     "repository": {
         "url": "https://github.com/forntoh/mdcdoc.git"
     },
