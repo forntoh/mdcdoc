@@ -2,30 +2,30 @@
 #define _timer_h_
 
 /**
+ * # Description
+ * 
  * Simple and easy to use timer library
- * 
- * ### Description
- * 
- * ### Example
- * 
+ *
+ * ## Example
+ *
  * Hallo World example (blinking LED)
- * 
+ *
  * ```cpp
  * #include <Timer.h>
- * 
+ *
  * Timer timer(1000);
- * 
+ *
  * void setup() {
  *   pinMode(LED, OUTPUT);
  * }
- * 
+ *
  * void loop() {
  *   if (timer.elapsed()) {
  *     digitalWrite(LED, ! digitalRead(LED)); // toggle LED
  *   }
  * }
  * ```
- * 
+ *
  */
 class Timer 
 {

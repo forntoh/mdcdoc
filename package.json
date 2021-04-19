@@ -3,13 +3,15 @@
     "version": "0.0.1",
     "description": "CPP Header file to Markdown converter",
     "main": "h2md.js",
+    "repository": {
+        "url": "https://github.com/ah01/h2md.git"
+    },
     "author": {
         "name": "Adam Horcica",
         "email": "adam@horcica.cz"
     },
     "license": "MIT",
     "dependencies": {
-        "minimist": "^1.2.0",
-        "string": "^3.3.3"
+        "minimist": "^1.2.5"
     }
 }
