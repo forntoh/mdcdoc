@@ -1,10 +1,10 @@
 {
-    "name": "h2md",
+    "name": "mdcdoc",
     "version": "0.0.1",
     "description": "CPP Header file to Markdown converter",
-    "main": "h2md.js",
+    "main": "mdcdoc.js",
     "repository": {
-        "url": "https://github.com/ah01/h2md.git"
+        "url": "https://github.com/forntoh/mdcdoc.git"
     },
     "author": {
         "name": "Adam Horcica",
