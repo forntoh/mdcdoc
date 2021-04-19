@@ -1,6 +1,6 @@
 {
     "name": "mdcdoc",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "CPP Header file to Markdown converter",
     "main": "mdcdoc.js",
     "repository": {

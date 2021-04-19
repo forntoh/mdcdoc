@@ -39,4 +39,3 @@ mdcdoc works in 3 steps:
 3. Go block by block and
     - If code line is empty, just put content of block to output file.
     - If code line is not empty, make md header from it and then put content of block.
-
