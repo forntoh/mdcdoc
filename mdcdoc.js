@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
-import { readFileSync, writeFileSync } from "fs";
-import { basename } from "path";
-import minimist from "minimist";
+const fs = require("fs");
+const path = require("path");
+const minimist = require("minimist");
 
-import { parseCode } from "./lib/tokenizer.js";
-import { Generator } from "./lib/generator.js";
+const tokenizer = require("./lib/tokenizer.js");
+const generator = require("./lib/generator.js");
 
 const args = minimist(process.argv.slice(2), {
   boolean: ["help", "line", "file"],
@@ -20,7 +20,8 @@ const args = minimist(process.argv.slice(2), {
 
 if (args.help) {
   console.log(
-    readFileSync(__dirname + "/help.txt")
+    fs
+      .readFileSync(__dirname + "/help.txt")
       .toString()
       .trim()
   );
@@ -32,14 +33,14 @@ if (args._.length != 1) {
   return;
 }
 
-var text = readFileSync(args._[0]).toString();
+var text = fs.readFileSync(args._[0]).toString();
 
-var tokens = parseCode(text);
+var tokens = tokenizer.parseCode(text);
 
-var g = new Generator({
+var g = new generator.Generator({
   addLineNumber: args.line,
   addFileHeader: args.file,
-  file: basename(args._[0]),
+  file: path.basename(args._[0]),
 });
 
 if (args.pattern === undefined) {
@@ -53,9 +54,7 @@ g.generate(tokens);
 var md = g.doc.join("\n");
 
 if (args.o) {
-  writeFileSync(args.o, md);
+  fs.writeFileSync(args.o, md);
 } else {
   console.log(md);
 }
-
-//console.log(tokens);

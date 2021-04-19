@@ -1,17 +1,19 @@
 {
-    "name": "mdcdoc",
-    "version": "0.0.6",
-    "description": "CPP Header file to Markdown converter",
-    "bin": "mdcdoc.js",
-    "repository": {
-        "url": "https://github.com/forntoh/mdcdoc.git"
-    },
-    "author": {
-        "name": "Forntoh Thomas",
-        "email": "thomasforntoh@gmail.com"
-    },
-    "license": "MIT",
-    "dependencies": {
-        "minimist": "^1.2.5"
-    }
+  "name": "mdcdoc",
+  "version": "0.0.7",
+  "description": "CPP Header file to Markdown converter",
+  "bin": {
+      "mdcdoc": "./mdcdoc.js"
+  },
+  "repository": {
+    "url": "https://github.com/forntoh/mdcdoc.git"
+  },
+  "author": {
+    "name": "Forntoh Thomas",
+    "email": "thomasforntoh@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "minimist": "^1.2.5"
+  }
 }

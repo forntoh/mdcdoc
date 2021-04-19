@@ -8,7 +8,47 @@ library.h  →  [mdcdoc]  →  documentation.md
 
 Basic idea is that you already have markdown text in block comment of your code and you want to take them into separate file.
 
-*This tool is far away from doxygen or other proper documentation generators. I wanted a small tool for documenting a trivial Arduino library. I realized that, I unintentionally already writing markdown into comments. So, I just needed to take them out…*
+**Use the [JavaDoc](https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#writingdoccomments) syntax for proper functioning**
+
+## Sample Comment
+
+### Input
+
+```cpp
+/**
+ * # Constructor
+ */
+
+/**
+  * Constructor for the Dummy class
+  * @param foo this is foo
+  * @param bar this is bar
+  * @return new `Dummy` object
+  */
+```
+
+### Output
+
+---
+
+## 💡 Dummy(uint8_t foo, uint8_t bar)
+
+Constructor for the Dummy class
+
+```cpp
+Dummy(uint8_t foo, uint8_t bar)
+```
+
+**Params:**
+
+- `foo` - this is foo
+- `bar` - this is bar
+
+**Returns:**
+
+- new `Dummy` object
+
+---
 
 ## Examples
 
@@ -19,15 +59,12 @@ Basic idea is that you already have markdown text in block comment of your code 
 
 Get application. Requires *node.js* and *npm* to be installed on computer.
 
-```bash
-git clone https://github.com/forntoh/mdcdoc.git && cd mdcdoc
-npm install
-```
-
-Run it
+Use npx if you don't want to store the package locally.
 
 ```bash
-node mdcdoc -p cpp -o documentation.md library.h
+npx mdcdoc -p cpp -o documentation.md library.h
+                            ↑             ↑
+                       destination     header file
 ```
 
 ## Theory of operation
