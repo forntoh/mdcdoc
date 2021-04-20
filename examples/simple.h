@@ -13,28 +13,18 @@
 /** (add)
  * Add two numbers together
  * 
- * # Parameters
- * 
- * - `a` - first number
- * - `b` - second number
- * 
- * # Return
- * 
- * Return addition of number `a` and `b`
+ * @param a first number
+ * @param b second number
+ * @return addition of number `a` and `b`
  */
 int add(int a, int b);
 
 /** (sub)
  * Substract two numbers
  * 
- * # Parameters
- * 
- * - `a` - first number
- * - `b` - second number
- * 
- * # Return
- * 
- * Return subtraction of number `a` and `b`
+ * @param a first number
+ * @param b second number
+ * @return subtraction of number `a` and `b`
  */
 int sub(int a, int b);
 

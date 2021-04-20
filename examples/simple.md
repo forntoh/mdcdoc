@@ -1,56 +1,52 @@
-> This document was generated from file `simple.h` at 2018-6-4 22:32:45
-<a name="line-3"></a>
 # Calculator functions
 
 This is simple c header file for fictive calculator
 
-<a name="line-9"></a>
 ## Functions
 
-<a name="line-13"></a><a name="add"></a>
-### 🔹 int add(int a, int b)
+1. ### 🔹 int add(int a, int b)
 
-```cpp
-int add(int a, int b) /* line 25 */
-```
+    Add two numbers together
+    
 
-Add two numbers together
+    ```cpp
+    int add(int a, int b)
+    ```
 
-#### Parameters
+    **Params:**
 
-- `a` - first number
-- `b` - second number
+    - `a` - first number
+    - `b` - second number
 
-#### Return
+    **Returns:**
 
-Return addition of number `a` and `b`
+    - addition of number `a` and `b`
 
-<a name="line-27"></a><a name="sub"></a>
-### 🔹 int sub(int a, int b)
+1. ### 🔹 int sub(int a, int b)
 
-```cpp
-int sub(int a, int b) /* line 39 */
-```
+    Substract two numbers
+    
 
-Substract two numbers
+    ```cpp
+    int sub(int a, int b)
+    ```
 
-#### Parameters
+    **Params:**
 
-- `a` - first number
-- `b` - second number
+    - `a` - first number
+    - `b` - second number
 
-#### Return
+    **Returns:**
 
-Return subtraction of number `a` and `b`
+    - subtraction of number `a` and `b`
 
-<a name="line-41"></a>
 ## Global variables
 
-<a name="line-45"></a>
-### 🔧 extern int ans
+1. ### 🔧 extern int ans
 
-```cpp
-extern int ans /* line 48 */
-```
+    Global variable that contains last successful result of [add](#add) or [sub](#sub) functions.
 
-Global variable that contains last successful result of [add](#add) or [sub](#sub) functions.
+    ```cpp
+    extern int ans
+    ```
+

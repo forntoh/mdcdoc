@@ -1,6 +1,6 @@
 {
   "name": "mdcdoc",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "CPP Header file to Markdown converter",
   "bin": {
       "mdcdoc": "./mdcdoc.js"

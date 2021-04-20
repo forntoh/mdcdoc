@@ -8,7 +8,7 @@
  *
  * ## Example
  *
- * Hallo World example (blinking LED)
+ * Hello World example (blinking LED)
  *
  * ```cpp
  * #include <Timer.h>
@@ -46,16 +46,10 @@ public:
 
     /**
      * Create new timer instance with defined interval
-     * 
-     * # Parameters
-     * 
-     * - `interval` - interval time (in miliseconds)
-     * - `autostop` - indicate if timer should stop after each elapsed
-     * 
-     * # Example
-     * ```cpp
-     * Timer mytimer(5000); // New timer for 5 sec.
-     * ```
+     *
+     * `Timer mytimer(5000); // New timer for 5 sec.`
+     * @param interval interval time (in miliseconds)
+     * @param autostop indicate if timer should stop after each elapsed
      */
     Timer(time_ms interval, bool autostop = false);
 
@@ -65,11 +59,7 @@ public:
 
     /**
      * Check if set interval elapsed
-     * 
-     * # Return
-     * 
-     * Return `true` if interval epalsed othervise `false`
-     * 
+     * @return `true` if interval epalsed othervise `false`
      */
     bool elapsed();
 
@@ -80,10 +70,7 @@ public:
 
     /**
      * Restart timer form begining and change interval
-     * 
-     * # Parametry:
-     * 
-     * - `interval` - interval time (in miliseconds)
+     * @param interval interval time (in miliseconds)
      */
     void restart(time_ms interval);
 

@@ -1,18 +1,12 @@
-> This document was generated from file `timer.h` at 2018-6-4 22:04:29
-<a name="line-4"></a>
 # Timer
 
-```cpp
-class Timer /* line 30 */
-```
+## Description
 
 Simple and easy to use timer library
 
-#### Description
+### Example
 
-#### Example
-
-Hallo World example (blinking LED)
+Hello World example (blinking LED)
 
 ```cpp
 #include <Timer.h>
@@ -31,87 +25,83 @@ void loop() {
 ```
 
 
-<a name="line-34"></a>
+```cpp
+class Timer
+```
+
+
 ## Type definition
 
-<a name="line-38"></a>
-### typedef unsigned long time_ms
+1. ### typedef unsigned long time_ms
 
-```cpp
-typedef unsigned long time_ms /* line 41 */
-```
+    Type of time in miliseconds
 
-Type of time in miliseconds
+    ```cpp
+    typedef unsigned long time_ms
+    ```
 
-<a name="line-43"></a>
+
 ## Constructors
 
-<a name="line-47"></a>
-### 💡 Timer(time_ms interval, bool autostop = false)
+1. ### 💡 Timer(time_ms interval, bool autostop = false)
 
-```cpp
-Timer(time_ms interval, bool autostop = false) /* line 60 */
-```
+    Create new timer instance with defined interval
+    
+    `Timer mytimer(5000); // New timer for 5 sec.`
 
-Create new timer instance with defined interval
+    ```cpp
+    Timer(time_ms interval, bool autostop = false)
+    ```
 
-#### Parameters
+    **Params:**
 
-- `interval` - interval time (in miliseconds)
-- `autostop` - indicate if timer should stop after each elapsed
+    - `interval` - interval time (in miliseconds)
+    - `autostop` - indicate if timer should stop after each elapsed
 
-#### Example
-```cpp
-Timer mytimer(5000); // New timer for 5 sec.
-```
 
-<a name="line-62"></a>
 ## Methods
 
-<a name="line-66"></a>
-### Ⓜ️ bool elapsed()
+1. ### Ⓜ️ bool elapsed()
 
-```cpp
-bool elapsed() /* line 74 */
-```
+    Check if set interval elapsed
 
-Check if set interval elapsed
+    ```cpp
+    bool elapsed()
+    ```
 
-#### Return
+    **Returns:**
 
-Return `true` if interval epalsed othervise `false`
+    - `true` if interval epalsed othervise `false`
+
+1. ### Ⓜ️ void restart()
+
+    Restart timer form begining
+
+    ```cpp
+    void restart()
+    ```
 
 
-<a name="line-76"></a>
-### Ⓜ️ void restart()
+1. ### Ⓜ️ void restart(time_ms interval)
 
-```cpp
-void restart() /* line 79 */
-```
+    Restart timer form begining and change interval
 
-Restart timer form begining
+    ```cpp
+    void restart(time_ms interval)
+    ```
 
-<a name="line-81"></a>
-### Ⓜ️ void restart(time_ms interval)
+    **Params:**
 
-```cpp
-void restart(time_ms interval) /* line 88 */
-```
+    - `interval` - interval time (in miliseconds)
 
-Restart timer form begining and change interval
 
-#### Parametry:
-
-- `interval` - interval time (in miliseconds)
-
-<a name="line-90"></a>
 ## Attributes
 
-<a name="line-94"></a>
-### 🔧 time_ms interval
+1. ### time_ms interval
 
-```cpp
-time_ms interval /* line 97 */
-```
+    Timers interval (in miliseconds)
 
-Timers interval (in miliseconds)
+    ```cpp
+    time_ms interval
+    ```
+
